@@ -5,7 +5,7 @@ from matplotlib.figure import Figure
 import numpy as np
 import glob
 
-class corr:
+class palette:
     def __init__(self):
         ################################################################################################################
         ###################### Function Parameters #####################################################################
@@ -120,7 +120,7 @@ class corr:
 
 
 
-test = corr()
+test = palette()
 print(test.cVar1.get())
 print(test.cVar2.get())
 
