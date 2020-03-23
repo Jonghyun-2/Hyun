@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <h1>총 단어 수 : {{length}}</h1>
+    <a href="{%url 'home'%}">Home 으로</a>
+    <br>
+    <h2> Input text : </h2>
+    {{full}}
+    <h2> Counting text : </h2>
+    {% for key, value in dic %}
+    {{key}} : {{value}}
+    <br>
+    {% endfor %}
+    <h2>{{test}}</h2>
+</body>
+</html>

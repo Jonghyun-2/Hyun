@@ -20,5 +20,7 @@ import uploadimg.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',uploadimg.views.home, name = "home"),
+    path('', uploadimg.views.home, name = "home"),
+    path('about/', uploadimg.views.about,name='about'),
+    path('result/',uploadimg.views.result, name = 'result'),
 ]

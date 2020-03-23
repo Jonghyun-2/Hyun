@@ -5,6 +5,17 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+
+    <h1>Image Upload</h1>
+    <!--href 하이퍼링크 역할-->
+    <a href="{%url 'about'%}">ABOUT</a>
+
+    <form action="{%url 'result' %}">
+        <textarea name="fulltext", cols="40", rows="10"></textarea>
+        <br>
+        <textarea name="test", cols="40", rows="10"></textarea>
+        <br>
+        <input type="submit" value="제출하기">
+    </form>
 </body>
 </html>
