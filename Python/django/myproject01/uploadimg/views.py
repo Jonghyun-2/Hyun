@@ -23,4 +23,5 @@ def result(request):
         else:
             words_dic[word] = 1
     # render 에서 parameter를 dict 형태로 전달해줄경우
-    return render(request, 'result.html',{'full':full,'length':len(words),'dic':words_dic.items(),'test':test})
+    return render(request, 'result.html',
+                  {'full':full,'length':len(words),'dic':words_dic.items(),'test':test})
